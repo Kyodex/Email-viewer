@@ -1,0 +1,14 @@
+<h1>Emails#index</h1>
+<p>Find me in app/views/emails/index.html.erb</p>
+
+
+<h1>Email Dog</h1>
+<%= link_to "New Email", new_email_path, id: "new_link", remote: true %>
+<h2>Unread emails</h2>
+<div class="emails" id="unread_emails">
+  <%= render @unread_emails %>
+</div>
+<h2>already read emails</h2>
+<div class="emails" id="read_emails">
+  <%= render @read_emails %>
+</div>
